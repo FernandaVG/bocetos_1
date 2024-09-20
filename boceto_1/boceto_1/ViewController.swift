@@ -15,5 +15,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBSegueAction func cambio_pantalla(_ coder: NSCoder) -> ControladorVistaCita? {
+        return ControladorVistaCita()
+    }
 }
 

@@ -16,6 +16,9 @@
 		FBF14BE22C9DC92500F41B4E /* boceto_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BE12C9DC92500F41B4E /* boceto_1Tests.swift */; };
 		FBF14BEC2C9DC92500F41B4E /* boceto_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BEB2C9DC92500F41B4E /* boceto_1UITests.swift */; };
 		FBF14BEE2C9DC92500F41B4E /* boceto_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BED2C9DC92500F41B4E /* boceto_1UITestsLaunchTests.swift */; };
+		FBF14BFC2C9DCA6700F41B4E /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BFB2C9DCA6700F41B4E /* Cita.swift */; };
+		FBF14BFF2C9DCAA800F41B4E /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BFE2C9DCAA800F41B4E /* generador_de_citas.swift */; };
+		FBF14C022C9DD9D300F41B4E /* ControladorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14C012C9DD9D300F41B4E /* ControladorCita.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		FBF14BE72C9DC92500F41B4E /* boceto_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boceto_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF14BEB2C9DC92500F41B4E /* boceto_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITests.swift; sourceTree = "<group>"; };
 		FBF14BED2C9DC92500F41B4E /* boceto_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBF14BFB2C9DCA6700F41B4E /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
+		FBF14BFE2C9DCAA800F41B4E /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
+		FBF14C012C9DD9D300F41B4E /* ControladorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorCita.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		FBF14BC92C9DC92500F41B4E /* boceto_1 */ = {
 			isa = PBXGroup;
 			children = (
+				FBF14C002C9DD9A900F41B4E /* controladores_de_vista */,
+				FBF14BFD2C9DCA7700F41B4E /* controlador */,
+				FBF14BFA2C9DCA4B00F41B4E /* modelo */,
 				FBF14BCA2C9DC92500F41B4E /* AppDelegate.swift */,
 				FBF14BCC2C9DC92500F41B4E /* SceneDelegate.swift */,
 				FBF14BCE2C9DC92500F41B4E /* ViewController.swift */,
@@ -125,6 +134,30 @@
 				FBF14BED2C9DC92500F41B4E /* boceto_1UITestsLaunchTests.swift */,
 			);
 			path = boceto_1UITests;
+			sourceTree = "<group>";
+		};
+		FBF14BFA2C9DCA4B00F41B4E /* modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FBF14BFB2C9DCA6700F41B4E /* Cita.swift */,
+			);
+			path = modelo;
+			sourceTree = "<group>";
+		};
+		FBF14BFD2C9DCA7700F41B4E /* controlador */ = {
+			isa = PBXGroup;
+			children = (
+				FBF14BFE2C9DCAA800F41B4E /* generador_de_citas.swift */,
+			);
+			path = controlador;
+			sourceTree = "<group>";
+		};
+		FBF14C002C9DD9A900F41B4E /* controladores_de_vista */ = {
+			isa = PBXGroup;
+			children = (
+				FBF14C012C9DD9D300F41B4E /* ControladorCita.swift */,
+			);
+			path = controladores_de_vista;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +293,9 @@
 			files = (
 				FBF14BCF2C9DC92500F41B4E /* ViewController.swift in Sources */,
 				FBF14BCB2C9DC92500F41B4E /* AppDelegate.swift in Sources */,
+				FBF14C022C9DD9D300F41B4E /* ControladorCita.swift in Sources */,
+				FBF14BFF2C9DCAA800F41B4E /* generador_de_citas.swift in Sources */,
+				FBF14BFC2C9DCA6700F41B4E /* Cita.swift in Sources */,
 				FBF14BCD2C9DC92500F41B4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
