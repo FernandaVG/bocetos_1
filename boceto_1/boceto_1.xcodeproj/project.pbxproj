@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB912E8E2CA1C218008046DF /* ControladorPantallaCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB912E8D2CA1C218008046DF /* ControladorPantallaCitas.swift */; };
 		FBF14BCB2C9DC92500F41B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BCA2C9DC92500F41B4E /* AppDelegate.swift */; };
 		FBF14BCD2C9DC92500F41B4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BCC2C9DC92500F41B4E /* SceneDelegate.swift */; };
 		FBF14BCF2C9DC92500F41B4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BCE2C9DC92500F41B4E /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		FBF14BEE2C9DC92500F41B4E /* boceto_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BED2C9DC92500F41B4E /* boceto_1UITestsLaunchTests.swift */; };
 		FBF14BFC2C9DCA6700F41B4E /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BFB2C9DCA6700F41B4E /* Cita.swift */; };
 		FBF14BFF2C9DCAA800F41B4E /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14BFE2C9DCAA800F41B4E /* generador_de_citas.swift */; };
-		FBF14C022C9DD9D300F41B4E /* ControladorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF14C012C9DD9D300F41B4E /* ControladorCita.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB912E8D2CA1C218008046DF /* ControladorPantallaCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaCitas.swift; sourceTree = "<group>"; };
 		FBF14BC72C9DC92500F41B4E /* boceto_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF14BCA2C9DC92500F41B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF14BCC2C9DC92500F41B4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		FBF14BED2C9DC92500F41B4E /* boceto_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBF14BFB2C9DCA6700F41B4E /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FBF14BFE2C9DCAA800F41B4E /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
-		FBF14C012C9DD9D300F41B4E /* ControladorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorCita.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 		FBF14C002C9DD9A900F41B4E /* controladores_de_vista */ = {
 			isa = PBXGroup;
 			children = (
-				FBF14C012C9DD9D300F41B4E /* ControladorCita.swift */,
+				FB912E8D2CA1C218008046DF /* ControladorPantallaCitas.swift */,
 			);
 			path = controladores_de_vista;
 			sourceTree = "<group>";
@@ -293,10 +293,10 @@
 			files = (
 				FBF14BCF2C9DC92500F41B4E /* ViewController.swift in Sources */,
 				FBF14BCB2C9DC92500F41B4E /* AppDelegate.swift in Sources */,
-				FBF14C022C9DD9D300F41B4E /* ControladorCita.swift in Sources */,
 				FBF14BFF2C9DCAA800F41B4E /* generador_de_citas.swift in Sources */,
 				FBF14BFC2C9DCA6700F41B4E /* Cita.swift in Sources */,
 				FBF14BCD2C9DC92500F41B4E /* SceneDelegate.swift in Sources */,
+				FB912E8E2CA1C218008046DF /* ControladorPantallaCitas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

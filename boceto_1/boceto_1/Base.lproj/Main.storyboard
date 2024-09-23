@@ -50,7 +50,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlO-S7-ZGb">
                                 <rect key="frame" x="96.666666666666686" y="703" width="200" height="120"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="HtB-Z6-n7Q"/>
                                     <constraint firstAttribute="height" constant="120" id="kHd-iz-8vz"/>
@@ -70,7 +70,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <segue destination="ILy-51-LAB" kind="show" destinationCreationSelector="cambio_pantalla:" id="8Js-rT-hA6"/>
+                                    <segue destination="ILy-51-LAB" kind="show" destinationCreationSelector="abrir_pantalla_citas:" id="8Js-rT-hA6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="705" y="804"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Citas-->
         <scene sceneID="khj-m5-6oK">
             <objects>
-                <viewController id="ILy-51-LAB" sceneMemberID="viewController">
+                <viewController id="ILy-51-LAB" customClass="ControladorPantallaCitas" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="57G-0K-sA9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +231,25 @@
                                     <constraint firstAttribute="height" constant="20" id="aJn-SN-FJ8"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmt-UG-0aN">
+                                <rect key="frame" x="140" y="111" width="114" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="Khd-KC-xXf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfq-ib-r1r">
+                                <rect key="frame" x="175" y="653" width="42" height="21"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="1Hp-rG-0Mm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hzH-3d-LwH"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -247,6 +266,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MBj-bt-SWg"/>
+                    <connections>
+                        <outlet property="nombre_de_quien_lo_dijo" destination="Lmt-UG-0aN" id="9Hk-Ji-zea"/>
+                        <outlet property="que_dijo_muro_texto" destination="qfq-ib-r1r" id="auw-2S-PI8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZT-FW-arb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,14 +280,17 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

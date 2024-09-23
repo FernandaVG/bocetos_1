@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     }
 
 
-    @IBSegueAction func cambio_pantalla(_ coder: NSCoder) -> ControladorVistaCita? {
-        return ControladorVistaCita()
+    @IBSegueAction func abrir_pantalla_citas(_ coder: NSCoder) -> ControladorPantallaCitas? {
+        return ControladorPantallaCitas(muro_texto: "Hahaha", de_quien: "Calabaza", coder: coder)
     }
 }
 
