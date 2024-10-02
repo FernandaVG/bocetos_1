@@ -29,12 +29,12 @@ class ViewController: UIViewController {
     }
     //Funcion para regresar a la pantalla de inicio e identificar que view contoller esta controlandolo
     @IBAction func volver_al_inicio(segue: UIStoryboardSegue){
+        print("--------")
         if let pantalla_agregar_citas = segue.source as? ControladorGeneradorCita{
-            citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            if pantalla_agregar_citas.cita_creada != nil {
+                citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            }
         }
-        
-
-        
     }
     
     //let pantalla_citas = segue.source as? ControladorPantallaCitas
